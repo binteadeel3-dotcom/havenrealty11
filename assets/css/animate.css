@@ -1,0 +1,99 @@
+/* ======================================================
+   ANIMATE.CSS - HAVEN REALTY (OPTIMIZED)
+   Purpose:
+   - Lightweight, smooth motion
+   - GPU-accelerated transforms
+   - Mobile & accessibility safe
+====================================================== */
+
+/* ------------------------------------------------------
+   1. Subtle Hover Lift (GPU Optimized)
+------------------------------------------------------ */
+.hover-lift {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.hover-lift:hover {
+  transform: translate3d(0, -8px, 0);
+  box-shadow: var(--box-shadow-md);
+}
+
+/* ------------------------------------------------------
+   2. Soft Glow Pulse (Button Attention Effect)
+------------------------------------------------------ */
+.glow-effect {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(108, 117, 125, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(108, 117, 125, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(108, 117, 125, 0);
+  }
+}
+
+/* ------------------------------------------------------
+   3. Navbar Dropdown Animation (Desktop Only Safe)
+------------------------------------------------------ */
+
+/* Default: No animation to prevent mobile flicker */
+.dropdown-menu {
+  animation: none;
+}
+
+/* Enable animation only on desktop */
+@media (min-width: 992px) {
+  .dropdown-menu.animate-fade-up {
+    animation: navFadeUp 0.3s ease-out;
+  }
+}
+
+@keyframes navFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------------------
+   4. Smooth Image Fade (Gallery Friendly)
+------------------------------------------------------ */
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------
+   5. Reduced Motion Support (Accessibility)
+------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

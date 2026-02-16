@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Professional Documentation | Haven Realty - Real Estate Template
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #6c757d;
+        --dark: #111111;
+        --light: #f8f9fa;
+        --border: #e9ecef;
+        --accent: #2d3436;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.8;
+        color: #555;
+        margin: 0;
+        display: flex;
+        background: #fff;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 320px;
+        height: 100vh;
+        background: var(--dark);
+        color: #fff;
+        position: fixed;
+        overflow-y: auto;
+        padding-top: 20px;
+        border-right: 1px solid #222;
+      }
+      .sidebar-brand {
+        padding: 20px 40px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -1px;
+      }
+      .sidebar-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar-menu li a {
+        color: #999;
+        text-decoration: none;
+        padding: 12px 40px;
+        display: block;
+        font-size: 0.9rem;
+        transition: 0.3s;
+        border-left: 4px solid transparent;
+      }
+      .sidebar-menu li a:hover,
+      .sidebar-menu li a.active {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.05);
+        border-left-color: var(--primary);
+      }
+      .menu-cat {
+        padding: 25px 40px 10px;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        color: #444;
+        font-weight: 800;
+      }
+
+      /* Main Content */
+      .main-content {
+        margin-left: 320px;
+        padding: 80px 100px;
+        width: 100%;
+        max-width: 1100px;
+      }
+      section {
+        margin-bottom: 100px;
+        scroll-margin-top: 60px;
+      }
+      h1 {
+        font-size: 3.2rem;
+        color: var(--dark);
+        margin-bottom: 10px;
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+      h2 {
+        font-size: 2.2rem;
+        color: var(--dark);
+        border-bottom: 2px solid var(--light);
+        padding-bottom: 15px;
+        margin-top: 60px;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-top: 40px;
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+
+      /* Components */
+      .file-tree {
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 30px;
+        border-radius: 12px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        white-space: pre;
+        overflow-x: auto;
+      }
+      .important-note {
+        background: #fff8e1;
+        border-left: 5px solid #ffc107;
+        padding: 25px;
+        border-radius: 8px;
+        margin: 30px 0;
+        color: #856404;
+      }
+      pre {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        border: 1px solid var(--border);
+        overflow-x: auto;
+      }
+      code {
+        color: #d63384;
+        font-weight: 600;
+      }
+      .img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .img-item {
+        border: 1px solid var(--border);
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .img-item strong {
+        display: block;
+        color: var(--dark);
+        margin-bottom: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+      }
+      table th,
+      table td {
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px solid var(--border);
+      }
+      table th {
+        background: var(--light);
+        font-weight: 700;
+      }
+
+      @media (max-width: 1100px) {
+        .sidebar {
+          display: none;
+        }
+        .main-content {
+          margin-left: 0;
+          padding: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-brand">HAVEN REALTY</div>
+      <ul class="sidebar-menu">
+        <li class="menu-cat">Start Here</li>
+        <li><a href="#intro" class="active">Introduction</a></li>
+        <li><a href="#structure">Project Structure</a></li>
+        <li class="menu-cat">Page Details</li>
+        <li><a href="#home">Home Page</a></li>
+        <li><a href="#about">About Page</a></li>
+        <li><a href="#properties">Properties Listing</a></li>
+        <li><a href="#property-details">Property Details</a></li>
+        <li><a href="#blog">Blog & News</a></li>
+        <li><a href="#extra">Extra Pages (FAQ, Agents)</a></li>
+        <li class="menu-cat">Customization</li>
+        <li><a href="#global">Global Styling</a></li>
+        <li><a href="#images">Image Replacement Guide</a></li>
+        <li><a href="#animations">Animations (AOS)</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <section id="intro">
+        <h1>Documentation</h1>
+        <p>
+          Welcome to <strong>Haven Realty</strong>. This is a high-impact,
+          professional Real Estate HTML5 template designed with
+          <strong>Bootstrap 5</strong>. It features premium glassmorphism UI,
+          smooth AOS animations, and Swiper.js integration.
+        </p>
+        <div class="important-note">
+          <strong>Note to Buyers:</strong> This is a static HTML template. To
+          make forms (Contact, Tour Booking, Newsletter) active, you must
+          connect them to a backend service or PHP script.
+        </div>
+      </section>
+
+      <section id="structure">
+        <h2>Project Structure</h2>
+        <p>Your project is organized logically for easy editing:</p>
+        <div class="file-tree">
+          HAVEN-REALTY/ ├── assets/ | ├── css/ (animate.css, aos.css,
+          responsive.css, style.css) | ├── fonts/ (Inter font family - WOFF2) |
+          ├── images/ (Categorized: blog, hero, icons, logo, properties, team) |
+          ├── js/ (aos.js, main.js, swiper-bundle.js) | ├── vendors/ (Licenses)
+          | └── videos/ (property-video.mp4) ├── index.html ├── about.html ├──
+          properties.html ├── property-details.html ├── blog.html ├──
+          agents.html └── ... (All other HTML files)
+        </div>
+      </section>
+
+      <section id="home">
+        <h2>Home Page Sections</h2>
+        <h3>1. Hero Section</h3>
+        <p>
+          High-impact background with a <strong>Glassmorphism</strong> filter.
+          Includes a specialized search filter with two dropdowns for property
+          types and cities.
+        </p>
+        <h3>2. Featured Properties</h3>
+        <p>
+          Uses <strong>Swiper.js</strong>. Each card is meticulously designed to
+          show pricing, location, and property highlights with a "View Details"
+          call to action.
+        </p>
+        <h3>3. Why Choose Us</h3>
+        <p>
+          A 3-column grid featuring high-quality icons. Perfect for building
+          trust with your users.
+        </p>
+        <h3>4. Footer & Newsletter</h3>
+        <p>
+          The footer includes a modern Newsletter signup and detailed contact
+          information (Address, Timings, Socials).
+        </p>
+      </section>
+
+      <section id="about">
+        <h2>About Us Page</h2>
+        <ul>
+          <li>
+            <strong>Hero:</strong> Consistent with the site theme for
+            professional branding.
+          </li>
+          <li>
+            <strong>Company Mission:</strong> Dedicated layout for your brand
+            story.
+          </li>
+          <li>
+            <strong>Team Section:</strong> Well-designed cards displaying agent
+            photos, roles, and social links.
+          </li>
+        </ul>
+      </section>
+
+      <section id="properties">
+        <h2>Properties Listing (Search)</h2>
+        <p>This page is the heart of the browsing experience:</p>
+        <ul>
+          <li>
+            <strong>Sidebar Filters:</strong> Pre-styled checkboxes and
+            dropdowns for City, Property Type, Price Range, and Square Footage.
+          </li>
+          <li>
+            <strong>Property Grid:</strong> Cards featuring "For Sale" or "For
+            Rent" badges, price, and bed/bath counts.
+          </li>
+          <li>
+            <strong>Pagination:</strong> Functional UI for navigating through
+            multiple property listings.
+          </li>
+        </ul>
+      </section>
+
+      <section id="property-details">
+        <h2>Property Details (Single View)</h2>
+        <p>The most detailed page in the template, including:</p>
+        <ul>
+          <li>
+            <strong>Image Gallery:</strong> Full-width Swiper slider for
+            interior shots.
+          </li>
+          <li>
+            <strong>Schedule Tour:</strong> A clean form for lead generation.
+          </li>
+          <li>
+            <strong>Specifications:</strong> Dedicated table for Sqft, Year
+            Built, and Amenities.
+          </li>
+          <li>
+            <strong>Video Section:</strong> Embedded support for property
+            walkthroughs (<code>assets/videos/property-video.mp4</code>).
+          </li>
+          <li>
+            <strong>Reviews:</strong> Post and read review sections with star
+            ratings.
+          </li>
+        </ul>
+      </section>
+
+      <section id="#blog">
+        <h2>Blog & News</h2>
+        <p>
+          Includes 6 beautifully designed blog cards on the main page. The
+          <strong>Blog Details</strong> page features a robust sidebar with
+          categories, recent posts, and a project gallery to keep users engaged.
+        </p>
+      </section>
+
+      <section id="global">
+        <h2>Global Customization</h2>
+        <h3>Colors & Branding</h3>
+        <p>
+          The entire template's color scheme can be changed in one place. Open
+          <code>assets/css/style.css</code>:
+        </p>
+        <pre>
+:root {
+  --primary-color: #6c757d;  /* Change this to your brand color */
+  --dark-color: #111111;     /* Main background color */
+  --light-color: #f8f9fa;    /* Secondary background */
+}</pre
+        >
+      </section>
+
+      <section id="images">
+        <h2>Image Replacement Guide</h2>
+        <p>
+          To replace images, follow these exact paths in the
+          <code>assets/images/</code> folder:
+        </p>
+
+        <div class="img-grid">
+          <div class="img-item">
+            <strong>Hero Backgrounds:</strong>
+            <code>hero/hero-background.png</code>
+          </div>
+          <div class="img-item">
+            <strong>About Us Image:</strong>
+            <code>hero/about-us.png</code>
+          </div>
+          <div class="img-item">
+            <strong>Home Property Cards:</strong>
+            <code>properties/home-page-properties/</code>
+          </div>
+          <div class="img-item">
+            <strong>Search Page Listing:</strong>
+            <code>properties/properties-page-properties/</code>
+          </div>
+          <div class="img-item">
+            <strong>Brand Icons:</strong>
+            <code>icons/ (trust.png, secure.png, etc.)</code>
+          </div>
+          <div class="img-item">
+            <strong>Agent/Team Photos:</strong>
+            <code>team/ (agent1.png, member1.png)</code>
+          </div>
+        </div>
+      </section>
+
+      <section id="animations">
+        <h2>Animations (AOS)</h2>
+        <p>
+          We use <strong>AOS (Animate On Scroll)</strong> for all transitions.
+          To change an animation, find the <code>data-aos</code> attribute in
+          the HTML:
+        </p>
+        <pre>
+&lt;div data-aos="fade-up" data-aos-duration="1000"&gt; ... &lt;/div&gt;</pre
+        >
+        <p>
+          Options include: <code>fade-up</code>, <code>fade-down</code>,
+          <code>zoom-in</code>, and <code>flip-left</code>.
+        </p>
+      </section>
+
+      <footer
+        style="
+          padding-top: 50px;
+          border-top: 1px solid var(--border);
+          color: #999;
+          font-size: 0.8rem;
+        "
+      >
+        © 2026 Haven Realty Template. Built for Excellence.
+      </footer>
+    </main>
+
+    <script>
+      // Simple Sidebar Toggle for Active Links
+      const links = document.querySelectorAll(".sidebar-menu a");
+      links.forEach((link) => {
+        link.addEventListener("click", function () {
+          links.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
