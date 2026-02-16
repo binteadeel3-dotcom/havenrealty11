@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Properties | Haven Realty</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--AOS-->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img
+            src="assets/images/logo/logo-light.png"
+            alt="Haven Realty"
+            height="65"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Properties
+              </a>
+              <ul class="dropdown-menu animate-fade-up">
+                <li>
+                  <a class="dropdown-item" href="properties.html"
+                    >All Properties</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="property-details.html">
+                    Property Details
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="blogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu animate-fade-up">
+                <li><a class="dropdown-item" href="blog.html">Blogs</a></li>
+                <li>
+                  <a class="dropdown-item" href="blog-details.html"
+                    >Blog Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="pageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Page
+              </a>
+              <ul class="dropdown-menu animate-fade-up">
+                <li><a class="dropdown-item" href="agents.html">Agents</a></li>
+                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                <li>
+                  <a class="dropdown-item" href="testimonials.html"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item ms-lg-4">
+              <a href="#" class="btn btn-dark nav-btn px-4">Post Property</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section
+      class="hero-section d-flex align-items-center"
+      style="
+        min-height: 60vh;
+        background: url(&quot;assets/images/hero/hero-background.png&quot;)
+          center center / cover no-repeat;
+      "
+    >
+      <div class="container text-center" data-aos="fade-up">
+        <h1 class="display-5 fw-bold text-white">Our Properties</h1>
+        <p class="text-white-50 mt-3">
+          Browse our exclusive listings and find your perfect home or
+          investment.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= MAIN PAGE ================= -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property1.png"
+                      alt="Modern glass villa with garden"
+                    />
+                    <span class="price">$120,000</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Crystal Bay Residences</h5>
+                    <p class="text-muted">Palm Avenue, Miami</p>
+                    <ul class="property-info">
+                      <li>4 Beds</li>
+                      <li>3 Baths</li>
+                      <li>2100 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Sale
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property2.png"
+                      alt="Luxury suburban home exterior"
+                    />
+                    <span class="price">$3,800 / Mo</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Willow Creek Homes</h5>
+                    <p class="text-muted">Maple Street, Austin</p>
+                    <ul class="property-info">
+                      <li>3 Beds</li>
+                      <li>2 Baths</li>
+                      <li>1700 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Rent
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property3.png"
+                      alt="Classic family house with porch"
+                    />
+                    <span class="price">$95,000</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Maplewood Estates</h5>
+                    <p class="text-muted">Greenfield Road, Denver</p>
+                    <ul class="property-info">
+                      <li>3 Beds</li>
+                      <li>2 Baths</li>
+                      <li>1600 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Sale
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property4.png"
+                      alt="Modern townhouse residential building"
+                    />
+                    <span class="price">$110,000</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Harbor Point Townhomes</h5>
+                    <p class="text-muted">Lakeside Drive, Seattle</p>
+                    <ul class="property-info">
+                      <li>4 Beds</li>
+                      <li>3 Baths</li>
+                      <li>2000 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Sale
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property5.png"
+                      alt="High rise apartment building exterior"
+                    />
+                    <span class="price">$2,900 / Mo</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Urban Heights Apartments</h5>
+                    <p class="text-muted">Downtown Blvd, Chicago</p>
+                    <ul class="property-info">
+                      <li>2 Beds</li>
+                      <li>2 Baths</li>
+                      <li>1350 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Rent
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="property-card">
+                  <div class="property-img">
+                    <img
+                      src="assets/images/properties/properties-page-properties/property6.png"
+                      alt="Luxury duplex with balcony"
+                    />
+                    <span class="price">$105,000</span>
+                  </div>
+                  <div class="property-content">
+                    <h5>Sunset Ridge Duplexes</h5>
+                    <p class="text-muted">Hillcrest Avenue, San Diego</p>
+                    <ul class="property-info">
+                      <li>3 Beds</li>
+                      <li>2 Baths</li>
+                      <li>1750 Sqft</li>
+                    </ul>
+                    <a
+                      href="property-details.html"
+                      class="btn btn-outline-dark w-100"
+                    >
+                      For Sale
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="property-filter sticky-top" style="top: 100px">
+              <h5 class="mb-4">Filter Properties</h5>
+
+              <div class="filter-group mb-3">
+                <label class="form-label">City</label>
+                <select class="form-select">
+                  <option selected disabled>Select City</option>
+                  <option>Miami</option>
+                  <option>Austin</option>
+                  <option>Denver</option>
+                  <option>Seattle</option>
+                  <option>Chicago</option>
+                  <option>San Diego</option>
+                </select>
+              </div>
+
+              <div class="filter-group mb-3">
+                <label class="form-label">Property Category</label>
+                <select class="form-select">
+                  <option selected disabled>Select Category</option>
+                  <option>Townhome</option>
+                  <option>House</option>
+                  <option>Apartment</option>
+                  <option>Office</option>
+                </select>
+              </div>
+
+              <div class="filter-group mb-3">
+                <label class="form-label d-block">Bedrooms</label>
+                <div class="checkbox-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bed1" />
+                    <label class="form-check-label" for="bed1">1 Bedroom</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bed2" />
+                    <label class="form-check-label" for="bed2"
+                      >2 Bedrooms</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bed3" />
+                    <label class="form-check-label" for="bed3"
+                      >3 Bedrooms</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bed4" />
+                    <label class="form-check-label" for="bed4"
+                      >4+ Bedrooms</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-group mb-3">
+                <label class="form-label d-block">Bathrooms</label>
+                <div class="checkbox-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="bath1"
+                    />
+                    <label class="form-check-label" for="bath1"
+                      >1 Bathroom</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="bath2"
+                    />
+                    <label class="form-check-label" for="bath2"
+                      >2 Bathrooms</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="bath3"
+                    />
+                    <label class="form-check-label" for="bath3"
+                      >3 Bathrooms</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="bath4"
+                    />
+                    <label class="form-check-label" for="bath4"
+                      >4+ Bathrooms</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-group mb-3">
+                <label class="form-label">Square Feet</label>
+                <input
+                  type="range"
+                  class="form-range custom-range"
+                  min="500"
+                  max="5000"
+                  value="2000"
+                  id="sqftRange"
+                />
+                <span class="range-value" id="sqftValue">Up to 2000 Sq Ft</span>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label">Price</label>
+                <input
+                  type="range"
+                  class="form-range custom-range"
+                  min="50000"
+                  max="1000000"
+                  value="350000"
+                  id="priceRange"
+                />
+                <span class="range-value" id="priceValue">Up to $350,000</span>
+              </div>
+
+              <button class="btn btn-dark w-100 mt-3">Apply Filters</button>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer bg-dark text-white">
+      <div class="container">
+        <!-- Top Center Text -->
+        <div class="footer-top text-center mb-5">
+          <h1 class="footer-tagline">
+            Haven Realty helps you find the perfect <br />
+            property with confidence and trust.
+          </h1>
+          <a href="properties.html" class="btn btn-dark footer-cta">
+            View Properties
+          </a>
+        </div>
+
+        <!-- Middle Content -->
+        <div class="row gy-4 align-items-start">
+          <!-- Left: Location & Timing -->
+          <div class="col-lg-4 text-center">
+            <h6>Our Office</h6>
+            <p>
+              📍 245 Sunset Plaza,<br />
+              Downtown Avenue, NY
+            </p>
+            <p>
+              🕒 Mon – Sat: 9:00 AM – 6:00 PM<br />
+              ❌ Sunday: Closed
+            </p>
+          </div>
+
+          <!-- Center: Newsletter -->
+          <div class="col-lg-4 text-center">
+            <h6>Subscribe Our Newsletter</h6>
+            <form class="newsletter-form mt-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email address"
+                required
+              />
+              <button type="submit" class="btn btn-outline-dark mt-3 w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Contact & Social -->
+          <div class="col-lg-4 text-center">
+            <h6>Contact Us</h6>
+            <p>
+              📧 info@havenrealty.com<br />
+              ☎ +1 234 567 890
+            </p>
+            <div class="footer-social-container">
+              <h6 class="text-white mb-2">Follow Us</h6>
+              <div class="footer-social">
+                <a href="#"
+                  ><img src="assets/images/icons/facebook.png" alt="facebook"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/icons/instagram.png" alt="instagram"
+                /></a>
+                <a href="#"
+                  ><img src="assets/images/icons/youtube.png" alt="youtube"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center footer-bottom">
+          <p class="mb-0">© 2026 Haven Realty. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ================= JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>

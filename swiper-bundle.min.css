@@ -1,0 +1,158 @@
+/* ======================================================
+   RESPONSIVE.CSS - HAVEN REALTY (OPTIMIZED)
+====================================================== */
+
+/* ------------------------------------------------------
+   Tablets & Small Laptops (below 992px)
+------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-top: 100px;
+    text-align: center;
+    min-height: 50vh !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-search .col-md-4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand img {
+    height: 55px;
+    transition: height 0.3s ease;
+  }
+
+  .tour-sidebar {
+    position: static !important;
+    top: auto !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .main-detail-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ------------------------------------------------------
+   Mobile Phones (below 768px)
+------------------------------------------------------ */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .hero-section {
+    min-height: auto !important;
+  }
+
+  .hero-search {
+    padding: 15px !important;
+  }
+
+  .hero-search select.form-select {
+    font-size: 14px;
+    height: 48px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center !important;
+    margin-top: 15px;
+  }
+
+  .video-container {
+    height: 300px;
+  }
+
+  .spec-icon-box {
+    padding: 15px 10px;
+  }
+
+  .spec-icon-box strong {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------------------------------
+   Small Mobile Devices (below 576px)
+------------------------------------------------------ */
+@media (max-width: 575.98px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .btn,
+  .tour-sidebar .btn,
+  .newsletter-form .btn {
+    width: 100%;
+  }
+
+  .thumb-img {
+    height: 80px;
+    object-fit: cover;
+  }
+
+  .navbar-nav {
+    padding: 20px 0;
+  }
+}
+
+/* ------------------------------------------------------
+   iOS Safari Height Fix
+------------------------------------------------------ */
+@supports (height: 100svh) {
+  .hero-section {
+    min-height: 90svh;
+  }
+}
+
+/* ------------------------------------------------------
+   Reduced Motion Support
+------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ======================================================
+   🔥 FIXED: ABOUT PAGE ICON CENTERING & SIZING
+   This ensures icons are centered on Tablets & Phones
+====================================================== */
+
+/* Targeted centering for the "Why Choose Us" section */
+@media (max-width: 991.98px) {
+  /* Selects the images inside the Why Choose Us section columns */
+  .bg-light.section-padding .col-md-4 img,
+  .bg-light.section-padding .col-lg-4 img {
+    display: block !important;
+    margin: 0 auto !important; /* Forces horizontal centering */
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  /* Optional: Keeps the text width readable on wider tablets */
+  .bg-light.section-padding p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bg-light.section-padding .col-md-4 img,
+  .bg-light.section-padding .col-lg-4 img {
+    width: 90px !important; /* Slightly smaller for mobile phones */
+  }
+}
